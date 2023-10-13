@@ -3,9 +3,11 @@ class 붕어빵:
         self.name = name
         self.money = money
         self.total = 0
+
     def sell(self):
         print(f"{self.name}을 {self.money}에 팔았습니다")
         self.total += self.money
+
     def eat(self):
         print(self.name + "을 먹고있습니다.")
 
@@ -20,6 +22,6 @@ redbean.sell()
 eggbread.sell()
 eggbread.sell()
 
-total = (f"{cream.total + redbean.total + eggbread.total}")
+총판매금액 = (f"{cream.total + redbean.total + eggbread.total}")
 
-print(total)
+print(총판매금액)
